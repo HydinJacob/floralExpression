@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{    
+    background-color:hsla(0,0%,0%,0.9);
+    color:white; 
+    font-family: 'Lobster', cursive;     
+}
+
+h1{    
+    font-size: 40px;    
+}
+
+h2{
+    font-size: 36px;
+}
+
+p, span{
+    font-family: 'Bree Serif', serif;
+    font-size: 24px;
+}
+
+
+/* header section */
+
+.header-container{
+    display:flex;
+    justify-content:center ;    
+    flex-wrap: wrap;
+    height: 70px;
+    border-bottom: 2px solid #636b46;
+    background-color:hsla(0,0%,0%,0.9) ;
+    position:fixed;
+    z-index: 5;
+    width:100%;   
+ 
+}
+
+
+header h1{
+    letter-spacing: 1px;
+    padding: 0 30px;
+    margin-top:10px;
+}
+
+nav{
+    margin-top: 20px;    
+    text-align: right;
+    flex-grow: 1;
+    flex-shrink: 1;
+      
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;     
+}
+
+a{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 30px;
+    margin: auto 20px;
+    border-radius: 5px;
+    background-color: #f08080;
+    color: #ffffff;
+    
+}
+
+a:hover{
+    background-color:white;
+    color: #f08080;
+}
+
+.mission-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:700px;
+}
+
+.missionImage{    
+    background-image: url(./images/bgImage.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    top:70px;
+
+}
+
+.mission-container #statement{
+background-color:rgba(255,255,255,0.2);
+color:#ffffff;
+font-family: 'Lobster', cursive;
+text-align: center;
+margin: auto;
+}
+
+#statement p{
+    font-family: 'Lobster', cursive;
+}
+
+
+/* about-us section */
+
+
+.about_heading{
+    position: relative;
+    top:180px;
+    text-align:center;
+    padding: 50px; 
+    font-weight: normal;   
+}
+.about-container{    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#aboutImage {
+    flex:1;
+    width:50%;
+ 
+}
+
+#aboutImage img{
+    margin-left: 100px;
+    max-height: 500px;
+    justify-content: flex-end;
+
+}
+
+.aboutStatement{
+    font-size: 24px;
+    width:50%;
+    position: relative;
+    top: 150px;
+    margin-right: 100px;
+    text-align: justify;
+}
+
+/* product section */
+
+.product-heading{
+    position: relative;
+    top:70px;
+    margin-bottom:40px;
+    text-align:center;
+    padding: 50px; 
+    font-weight: normal; 
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    margin:30px 50px;
+}
+
+.product img{
+    border: 20px solid white;
+    max-height: 700px;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+}
+
+.product span{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* team section */
+
+.team-heading{
+    position: relative;
+    top:70px;
+    text-align:center;
+    padding: 50px; 
+    font-weight: normal;  
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member img{
+    margin: 30px 25px;
+    border: 15px solid white;
+    border-radius: 50%;
+}
+
+.member span{
+    display: block;
+    text-align: center;
+}
+
+/* footer section */
+
+.location-container{
+
+    background-color: #f08080;
+    color:white;
+    height:110px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top:70px;
+    margin-bottom: 0px;
+   
+}
+address{
+    letter-spacing: 1px;
+}
+#contact p{ font-size: 16px;}
+
+#contact .copy{
+    display:flex;
+    justify-content: flex-end;
+}
+
+/* media query */
+
+@media screen and (max-width:600px)
+
+
+{
+    .header-container{
+        position:absolute;
+    }
+
+h1{
+    font-size: 20px;
+}
+
+.nav-menu{
+    display: flex;
+	flex-direction: column;
+	width: 100%;  
+	text-align: center;
+}
+
+.nav-menu a{
+    padding: 0;
+    position: relative;
+    top:20px;
+    letter-spacing: 1px;
+    background-color:rgba(240,128,128,0.5);
+    
+}
+
+#stmt{
+    
+    font-size: 18px;
+}   
+
+ p, span{
+    text-align:center;
+    font-size: 16px;
+ }
+
+ #aboutImage img{
+  display: none; 
+}
+
+.team-heading{
+    margin-top: 80px;
+}
+ 
+
+
+}
+
+
